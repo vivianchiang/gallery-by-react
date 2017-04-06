@@ -26,19 +26,19 @@ function getDefaultModules() {
     loaders: [
       {
         test: /\.css$/,
-        loader: 'style-loader!css-loader!autoprefixer-loader?{browser:["last 2 version"]}'
+        loader: 'style-loader!css-loader!autoprefixer-loader?{browsers:["last 2 version"]}'
       },
       {
-        test: /\.scss/,
-        loader: 'style-loader!css-loader!autoprefixer-loader?{browser:["last 2 version"]}!sass-loader?outputStyle=expanded'
+        test: /\.scss$/,
+        loader: 'style-loader!css-loader!autoprefixer-loader?{browsers:["last 2 version"]}!sass-loader?outputStyle=expanded'
       },
       {
-        test: /\.less/,
-        loader: 'style-loader!css-loader!autoprefixer-loader?{browser:["last 2 version"]}!less-loader'
+        test: /\.less$/,
+        loader: 'style-loader!css-loader!autoprefixer-loader?{browsers:["last 2 version"]}!less-loader'
       },
       {
         test: /\.styl/,
-        loader: 'style-loader!css-loader!autoprefixer-loader?{browser:["last 2 version"]}!stylus-loader'
+        loader: 'style-loader!css-loader!autoprefixer-loader?{browsers:["last 2 version"]}!stylus-loader'
       },
       {
         test: /\.(png|jpg|gif|woff|woff2)$/,
